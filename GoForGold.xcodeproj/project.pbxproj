@@ -11,6 +11,7 @@
 		83FA413E21039A1400A8D161 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA413D21039A1400A8D161 /* ViewController.swift */; };
 		83FA414121039A1400A8D161 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FA413F21039A1400A8D161 /* Main.storyboard */; };
 		83FA414321039A1600A8D161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83FA414221039A1600A8D161 /* Assets.xcassets */; };
+		83FA414B21039A3A00A8D161 /* BoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA414A21039A3A00A8D161 /* BoxButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		83FA414021039A1400A8D161 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83FA414221039A1600A8D161 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83FA414421039A1600A8D161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83FA414A21039A3A00A8D161 /* BoxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				83FA413B21039A1400A8D161 /* AppDelegate.swift */,
 				83FA413D21039A1400A8D161 /* ViewController.swift */,
+				83FA414A21039A3A00A8D161 /* BoxButton.swift */,
 				83FA413F21039A1400A8D161 /* Main.storyboard */,
 				83FA414221039A1600A8D161 /* Assets.xcassets */,
 				83FA414421039A1600A8D161 /* Info.plist */,
@@ -133,6 +136,7 @@
 			files = (
 				83FA413E21039A1400A8D161 /* ViewController.swift in Sources */,
 				83FA413C21039A1400A8D161 /* AppDelegate.swift in Sources */,
+				83FA414B21039A3A00A8D161 /* BoxButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +282,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
@@ -297,6 +302,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};

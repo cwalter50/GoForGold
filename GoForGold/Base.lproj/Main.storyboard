@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="13122.16" systemVersion="17A278a" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GoForGold" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,9 +21,307 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="U1h-T4-Byy">
+                                <rect key="frame" x="240" y="210" width="1440" height="660"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dto-ov-uIp">
+                                        <rect key="frame" x="0.0" y="0.0" width="1440" height="158"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koj-Ea-KLQ" customClass="BoxButton" customModule="GoForGold" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="158"/>
+                                                <color key="backgroundColor" red="0.40784313729999999" green="0.73333333329999995" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="?"/>
+                                                <connections>
+                                                    <action selector="boxSelectedTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="xrn-xk-YBz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbT-va-DxX" customClass="BoxButton" customModule="GoForGold" customModuleProvider="target">
+                                                <rect key="frame" x="290" y="0.0" width="280" height="158"/>
+                                                <color key="backgroundColor" red="0.40784313729999999" green="0.73333333329999995" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="?"/>
+                                                <connections>
+                                                    <action selector="boxSelectedTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="Yzr-4a-3yf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZk-0K-4zU" customClass="BoxButton" customModule="GoForGold" customModuleProvider="target">
+                                                <rect key="frame" x="580" y="0.0" width="280" height="158"/>
+                                                <color key="backgroundColor" red="0.40784313729999999" green="0.73333333329999995" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="?"/>
+                                                <connections>
+                                                    <action selector="boxSelectedTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="pZe-BN-yXH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kn5-u3-C0O" customClass="BoxButton" customModule="GoForGold" customModuleProvider="target">
+                                                <rect key="frame" x="870" y="0.0" width="280" height="158"/>
+                                                <color key="backgroundColor" red="0.40784313729999999" green="0.73333333329999995" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="?"/>
+                                                <connections>
+                                                    <action selector="boxSelectedTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="heI-Jo-dDa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tY2-5k-R6u" customClass="BoxButton" customModule="GoForGold" customModuleProvider="target">
+                                                <rect key="frame" x="1160" y="0.0" width="280" height="158"/>
+                                                <color key="backgroundColor" red="0.40784313729999999" green="0.73333333329999995" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="?"/>
+                                                <connections>
+                                                    <action selector="boxSelectedTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="GAr-ki-sIE"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="OiI-dK-xxf"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TO4-Fn-cqL">
+                                        <rect key="frame" x="0.0" y="168" width="1440" height="157"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LE7-bE-6p5" customClass="BoxButton" customModule="GoForGold" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="157"/>
+                                                <color key="backgroundColor" red="0.40784313729999999" green="0.73333333329999995" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="?"/>
+                                                <connections>
+                                                    <action selector="boxSelectedTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="NmY-bI-ytU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIP-ns-349" customClass="BoxButton" customModule="GoForGold" customModuleProvider="target">
+                                                <rect key="frame" x="290" y="0.0" width="280" height="157"/>
+                                                <color key="backgroundColor" red="0.40784313729999999" green="0.73333333329999995" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="?"/>
+                                                <connections>
+                                                    <action selector="boxSelectedTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="RT8-b0-No5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJO-Wc-wl4" customClass="BoxButton" customModule="GoForGold" customModuleProvider="target">
+                                                <rect key="frame" x="580" y="0.0" width="280" height="157"/>
+                                                <color key="backgroundColor" red="0.40784313729999999" green="0.73333333329999995" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="?"/>
+                                                <connections>
+                                                    <action selector="boxSelectedTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="L6D-Ky-GE8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85W-c4-Q5Q" customClass="BoxButton" customModule="GoForGold" customModuleProvider="target">
+                                                <rect key="frame" x="870" y="0.0" width="280" height="157"/>
+                                                <color key="backgroundColor" red="0.40784313729999999" green="0.73333333329999995" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="?"/>
+                                                <connections>
+                                                    <action selector="boxSelectedTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="S4u-hP-L83"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PA7-ol-pWp" customClass="BoxButton" customModule="GoForGold" customModuleProvider="target">
+                                                <rect key="frame" x="1160" y="0.0" width="280" height="157"/>
+                                                <color key="backgroundColor" red="0.40784313729999999" green="0.73333333329999995" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="?"/>
+                                                <connections>
+                                                    <action selector="boxSelectedTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="qrf-yE-2WO"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="RmN-hu-xeG"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Tct-yb-nVc">
+                                        <rect key="frame" x="0.0" y="335" width="1440" height="158"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maR-HY-icO" customClass="BoxButton" customModule="GoForGold" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="158"/>
+                                                <color key="backgroundColor" red="0.40784313729999999" green="0.73333333329999995" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="?"/>
+                                                <connections>
+                                                    <action selector="boxSelectedTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="any-Vy-6g3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwA-Fq-VH2" customClass="BoxButton" customModule="GoForGold" customModuleProvider="target">
+                                                <rect key="frame" x="290" y="0.0" width="280" height="158"/>
+                                                <color key="backgroundColor" red="0.40784313729999999" green="0.73333333329999995" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="?"/>
+                                                <connections>
+                                                    <action selector="boxSelectedTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="Xsu-IG-uGF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRi-Ic-vUF" customClass="BoxButton" customModule="GoForGold" customModuleProvider="target">
+                                                <rect key="frame" x="580" y="0.0" width="280" height="158"/>
+                                                <color key="backgroundColor" red="0.40784313729999999" green="0.73333333329999995" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="?"/>
+                                                <connections>
+                                                    <action selector="boxSelectedTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="DqY-58-4ZQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C20-IF-x3u" customClass="BoxButton" customModule="GoForGold" customModuleProvider="target">
+                                                <rect key="frame" x="870" y="0.0" width="280" height="158"/>
+                                                <color key="backgroundColor" red="0.40784313729999999" green="0.73333333329999995" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="?"/>
+                                                <connections>
+                                                    <action selector="boxSelectedTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="Vqm-FV-cfr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxX-qG-LeF" customClass="BoxButton" customModule="GoForGold" customModuleProvider="target">
+                                                <rect key="frame" x="1160" y="0.0" width="280" height="158"/>
+                                                <color key="backgroundColor" red="0.40784313729999999" green="0.73333333329999995" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="?"/>
+                                                <connections>
+                                                    <action selector="boxSelectedTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="ybf-uE-snx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="p7j-54-TyE"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hAm-mT-jB9">
+                                        <rect key="frame" x="0.0" y="503" width="1440" height="157"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNb-ZU-W0J" customClass="BoxButton" customModule="GoForGold" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="157"/>
+                                                <color key="backgroundColor" red="0.40784313729999999" green="0.73333333329999995" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="?"/>
+                                                <connections>
+                                                    <action selector="boxSelectedTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="Urr-Ot-LDv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEb-sa-aJz" customClass="BoxButton" customModule="GoForGold" customModuleProvider="target">
+                                                <rect key="frame" x="290" y="0.0" width="280" height="157"/>
+                                                <color key="backgroundColor" red="0.40784313729999999" green="0.73333333329999995" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="?"/>
+                                                <connections>
+                                                    <action selector="boxSelectedTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="3F3-nt-3vK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJt-3N-4ib" customClass="BoxButton" customModule="GoForGold" customModuleProvider="target">
+                                                <rect key="frame" x="580" y="0.0" width="280" height="157"/>
+                                                <color key="backgroundColor" red="0.40784313729999999" green="0.73333333329999995" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="?"/>
+                                                <connections>
+                                                    <action selector="boxSelectedTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="TeO-C4-DJH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veg-gt-ZFD" customClass="BoxButton" customModule="GoForGold" customModuleProvider="target">
+                                                <rect key="frame" x="870" y="0.0" width="280" height="157"/>
+                                                <color key="backgroundColor" red="0.40784313729999999" green="0.73333333329999995" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="?"/>
+                                                <connections>
+                                                    <action selector="boxSelectedTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="YsO-cN-KHy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeI-cH-hAV" customClass="BoxButton" customModule="GoForGold" customModuleProvider="target">
+                                                <rect key="frame" x="1160" y="0.0" width="280" height="157"/>
+                                                <color key="backgroundColor" red="0.40784313729999999" green="0.73333333329999995" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="?"/>
+                                                <connections>
+                                                    <action selector="boxSelectedTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="laa-UU-z0q"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="STRIKES: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="38" translatesAutoresizingMaskIntoConstraints="NO" id="ciR-n2-SEo">
+                                <rect key="frame" x="240" y="68" width="727" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SCORE: $0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="38" translatesAutoresizingMaskIntoConstraints="NO" id="eXj-kd-KEY">
+                                <rect key="frame" x="975" y="68" width="697" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWm-cr-2WA">
+                                <rect key="frame" x="240" y="894" width="544" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Restart Game"/>
+                                <connections>
+                                    <action selector="restartGameTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="QX8-0W-WQp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTc-Pw-WKB">
+                                <rect key="frame" x="1062" y="894" width="610" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36470588240000001" green="0.61176470589999998" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Take the Money"/>
+                                <connections>
+                                    <action selector="takeTheMoneyTriggered:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="iOz-oG-SIf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="U1h-T4-Byy" secondAttribute="bottom" constant="150" id="QMa-hf-Nvi"/>
+                            <constraint firstItem="U1h-T4-Byy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="iHr-av-SVl"/>
+                            <constraint firstItem="U1h-T4-Byy" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" constant="150" id="pPP-gT-XVU"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="U1h-T4-Byy" secondAttribute="trailing" constant="150" id="uMw-Sh-uAl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
                     </view>
+                    <connections>
+                        <outlet property="restartGameButton" destination="xWm-cr-2WA" id="EfN-i1-xHC"/>
+                        <outlet property="scoreLabel" destination="eXj-kd-KEY" id="1po-sD-ze6"/>
+                        <outlet property="strikesLabel" destination="ciR-n2-SEo" id="YBo-Fl-srn"/>
+                        <outlet property="takeTheMoneyButton" destination="iTc-Pw-WKB" id="2c3-ni-4tB"/>
+                        <outletCollection property="boxes" destination="koj-Ea-KLQ" collectionClass="NSMutableArray" id="eAs-GS-Wgh"/>
+                        <outletCollection property="boxes" destination="YbT-va-DxX" collectionClass="NSMutableArray" id="BQK-jH-4je"/>
+                        <outletCollection property="boxes" destination="aZk-0K-4zU" collectionClass="NSMutableArray" id="c19-b1-bMx"/>
+                        <outletCollection property="boxes" destination="kn5-u3-C0O" collectionClass="NSMutableArray" id="ElM-bd-tic"/>
+                        <outletCollection property="boxes" destination="tY2-5k-R6u" collectionClass="NSMutableArray" id="u8Z-bR-ttR"/>
+                        <outletCollection property="boxes" destination="LE7-bE-6p5" collectionClass="NSMutableArray" id="Ghe-zw-DJ9"/>
+                        <outletCollection property="boxes" destination="MIP-ns-349" collectionClass="NSMutableArray" id="cfV-fh-vdG"/>
+                        <outletCollection property="boxes" destination="LJO-Wc-wl4" collectionClass="NSMutableArray" id="VsG-NZ-e6Z"/>
+                        <outletCollection property="boxes" destination="85W-c4-Q5Q" collectionClass="NSMutableArray" id="kSk-2f-eFn"/>
+                        <outletCollection property="boxes" destination="PA7-ol-pWp" collectionClass="NSMutableArray" id="K3y-Ur-mnt"/>
+                        <outletCollection property="boxes" destination="maR-HY-icO" collectionClass="NSMutableArray" id="9cs-SC-Hl5"/>
+                        <outletCollection property="boxes" destination="rwA-Fq-VH2" collectionClass="NSMutableArray" id="iZ5-en-qCS"/>
+                        <outletCollection property="boxes" destination="eRi-Ic-vUF" collectionClass="NSMutableArray" id="lLr-3S-EOT"/>
+                        <outletCollection property="boxes" destination="C20-IF-x3u" collectionClass="NSMutableArray" id="tDm-ZS-0fy"/>
+                        <outletCollection property="boxes" destination="TxX-qG-LeF" collectionClass="NSMutableArray" id="XXD-08-atj"/>
+                        <outletCollection property="boxes" destination="VNb-ZU-W0J" collectionClass="NSMutableArray" id="T5e-Kx-qU3"/>
+                        <outletCollection property="boxes" destination="uEb-sa-aJz" collectionClass="NSMutableArray" id="db0-dT-qzI"/>
+                        <outletCollection property="boxes" destination="jJt-3N-4ib" collectionClass="NSMutableArray" id="nAh-TB-KUK"/>
+                        <outletCollection property="boxes" destination="veg-gt-ZFD" collectionClass="NSMutableArray" id="grM-l8-iLi"/>
+                        <outletCollection property="boxes" destination="IeI-cH-hAV" collectionClass="NSMutableArray" id="96E-ck-4FC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
